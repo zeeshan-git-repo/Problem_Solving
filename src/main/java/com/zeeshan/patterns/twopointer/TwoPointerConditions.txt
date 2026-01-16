@@ -1,0 +1,13 @@
+Where to apply two pointer?
+1. If question belongs to Array or Linked List
+2. If sorted given or by sorting problem can be easy.
+3. If asked to Merge/ Remove duplicate/ Rearrange
+4. Detect Cycle written or making cycle problem can be solved
+5. Tree, Graph, Stack, DP will not use Two Pointer
+6. If asked in question to find pair/ triplet/ quadruple.
+7. If written Do not use extra space.
+
+
+
+Note:
+Agar number btana hai to sorting kr sakte hain and two sum apply hoga, leking agar index batana hai to nahi kar sakte.

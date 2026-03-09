@@ -18,6 +18,7 @@ public class OrderAgnosticBS {
             if(arr[mid]==target){
                 return mid;
             }
+// here start and end are changes by checking order is Ascending or Descending.
             if(asc){
                 if(arr[mid]>target){
                     end = mid-1;

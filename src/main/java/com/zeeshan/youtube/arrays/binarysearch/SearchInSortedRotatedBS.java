@@ -3,7 +3,7 @@ package com.zeeshan.youtube.arrays.binarysearch;
 public class SearchInSortedRotatedBS {
     // https://leetcode.com/problems/search-in-rotated-sorted-array/
     public static void main(String[] args) {
-        int arr[] = {4,5,6,7,0,1,2};
+        int arr[] = {1};
         int target = 0;
         System.out.println(search(arr,target));
     }
@@ -26,9 +26,9 @@ public class SearchInSortedRotatedBS {
             int mid = start + (end-start)/2;
             if(arr[mid] == target){
                 return mid;
-            } else if(arr[mid]<target){
+            }if(arr[mid]<target){
                 start = mid+1;
-            } else if(arr[mid]>target){
+            } else{
                 end = mid-1;
             }
         }

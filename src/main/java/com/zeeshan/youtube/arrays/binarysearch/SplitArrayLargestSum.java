@@ -26,7 +26,8 @@ public class SplitArrayLargestSum {
                     // then sum=num because we are starting a new subarray and pieces++ because we have split the array into one more part
                     sum = num;
                     pieces++;
-                } else{ // if sum+num is less than or equal to mid, then we can add num to the current subarray
+                } else{
+                    // if sum+num is less than or equal to mid, then we can add num to the current subarray
                     sum+=num;
                 }
             }
@@ -36,6 +37,7 @@ public class SplitArrayLargestSum {
                 end = mid;
             }
         }
-        return end; // here start and end will be equal because we are looking for the minimum largest sum among the k subarrays, so we can return either start or end
+        // here start and end will be equal because we are looking for the minimum largest sum among the k subarrays, so we can return either start or end
+        return end;
     }
 }

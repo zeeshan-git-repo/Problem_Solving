@@ -16,6 +16,9 @@ public class Basicll {
 
         // improvised way to display LL
         display(node1);
+        System.out.println("\nDisplay using recursion");
+        // using recursion
+        displayRecursion(node1);
 
     }
     public static class Node{
@@ -26,10 +29,17 @@ public class Basicll {
         }
     }
     private static void display(Node head){
-        Node temp = head;
+        Node temp = head; // temp is created to preserve it's head
         while(temp != null){
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
+    }
+    private static void displayRecursion(Node head){
+        if(head==null){
+            return;
+        }
+        System.out.print(head.data + " ");
+        displayRecursion(head.next);
     }
 }

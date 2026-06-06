@@ -9,10 +9,17 @@ public class Basicll {
         node1.next =  node2;
         node2.next =  node3;
         node3.next =  node4;
-        System.out.println(node1.data);
-        System.out.println(node1.next.data);
-        System.out.println(node1.next.next.data);
-        System.out.println(node1.next.next.next.data);
+//        System.out.println(node1.data);
+//        System.out.println(node1.next.data);
+//        System.out.println(node1.next.next.data);
+//        System.out.println(node1.next.next.next.data);
+
+        // improvised way to display LL
+        Node temp = node1;
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
 
     }
     public static class Node{

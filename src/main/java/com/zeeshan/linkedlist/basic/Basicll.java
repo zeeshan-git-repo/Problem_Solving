@@ -19,6 +19,8 @@ public class Basicll {
         System.out.println("\nDisplay using recursion");
         // using recursion
         displayRecursion(node1);
+        System.out.println("\nDisplay Reverse LL using recursion");
+        displayRecursionRev(node1);
 
     }
     public static class Node{
@@ -41,5 +43,12 @@ public class Basicll {
         }
         System.out.print(head.data + " ");
         displayRecursion(head.next);
+    }
+    private static void displayRecursionRev(Node head){
+        if(head==null){
+            return;
+        }
+        displayRecursionRev(head.next);
+        System.out.print(head.data + " ");
     }
 }

@@ -15,11 +15,7 @@ public class Basicll {
 //        System.out.println(node1.next.next.next.data);
 
         // improvised way to display LL
-        Node temp = node1;
-        while(temp != null){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
+        display(node1);
 
     }
     public static class Node{
@@ -27,6 +23,13 @@ public class Basicll {
         Node next;
         public Node(int data){
             this.data = data;
+        }
+    }
+    private static void display(Node head){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
         }
     }
 }

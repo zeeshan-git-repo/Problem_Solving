@@ -6,9 +6,11 @@ public class Basicll {
         Node node2 = new Node(8);
         Node node3 = new Node(3);
         Node node4 = new Node(9);
+        Node node5 = new Node(7);
         node1.next =  node2;
         node2.next =  node3;
         node3.next =  node4;
+        node4.next =  node5;
 //        System.out.println(node1.data);
 //        System.out.println(node1.next.data);
 //        System.out.println(node1.next.next.data);
@@ -21,7 +23,9 @@ public class Basicll {
         displayRecursion(node1);
         System.out.println("\nDisplay Reverse LL using recursion");
         displayRecursionRev(node1);
-
+        System.out.println();
+        int length = findLength(node1);
+        System.out.print("Length of LL is: " + length);
     }
     public static class Node{
         int data;
@@ -50,5 +54,15 @@ public class Basicll {
         }
         displayRecursionRev(head.next);
         System.out.print(head.data + " ");
+    }
+
+    private static int findLength(Node head){
+        int count = 0;
+        Node temp = head;
+        while(temp!=null){
+            count++;
+            temp = temp.next;
+        }
+        return count;
     }
 }

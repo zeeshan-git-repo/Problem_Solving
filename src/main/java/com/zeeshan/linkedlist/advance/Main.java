@@ -7,6 +7,7 @@ public class Main {
         list.insertAtEnd(4);
         list.insertAtEnd(90);
         list.insertAtEnd(20);
+        list.insertAtStart(2);
         System.out.println("Size of list is: " + list.size());
         list.display();
     }

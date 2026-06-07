@@ -23,6 +23,14 @@ public class LinkedList {
         tail = temp;
     }
 
+    void insertAtStart(int val) {
+        Node temp = new Node(val);
+        if(head!=null){
+            temp.next = head;
+        }
+        head = temp;
+    }
+
     public int size(){
         Node temp = head;
         int count=0;

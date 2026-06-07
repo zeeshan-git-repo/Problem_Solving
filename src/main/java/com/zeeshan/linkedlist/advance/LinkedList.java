@@ -27,6 +27,8 @@ public class LinkedList {
         Node temp = new Node(val);
         if(head!=null){
             temp.next = head;
+        } else{
+            tail = temp;
         }
         head = temp;
     }

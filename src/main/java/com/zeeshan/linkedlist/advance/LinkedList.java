@@ -33,6 +33,31 @@ public class LinkedList {
         head = temp;
     }
 
+    void insertAt(int index, int val){
+        Node newNode = new Node(val);
+        if(index==0){
+            newNode.next = head;
+            head = newNode;
+            if(tail==null){
+                tail = newNode;
+            }
+            return;
+        }
+        Node temp = head;
+        for(int i=1;i<=index-1; i++){
+            if(temp==null){
+                System.out.println(index + " is invalid index, cannot inserted");
+                return;
+            }
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        temp.next = newNode;
+        if(newNode.next==null){
+            tail = newNode;
+        }
+    }
+
     public int size(){
         Node temp = head;
         int count=0;

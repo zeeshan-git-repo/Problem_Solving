@@ -7,10 +7,13 @@ public class Main {
         list.insertAtEnd(4);
         list.insertAtEnd(90);
         list.insertAtEnd(20);
-        list.insertAt(9, 101);
+
         list.insertAtStart(2);
-        list.insertAt(0, 100);
+        list.insertAt(5, 100);
+        list.insertAt(6, 101);
         System.out.println("Size of list is: " + list.size());
         list.display();
+        System.out.println("Tail: "+list.tail.data);
+        System.out.println("Head: "+list.head.data);
     }
 }

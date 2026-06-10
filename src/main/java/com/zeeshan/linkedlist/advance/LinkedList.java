@@ -36,11 +36,11 @@ public class LinkedList {
     void insertAt(int index, int val){
         Node newNode = new Node(val);
         if(index==0){
-            newNode.next = head;
-            head = newNode;
-            if(tail==null){
-                tail = newNode;
-            }
+            insertAtStart(val);
+            return;
+        }
+        if(index == size()){
+            insertAtEnd(val);
             return;
         }
         Node temp = head;
